@@ -12,7 +12,7 @@ body::-webkit-scrollbar-track{
     background: #C3BCB9;
 }
 body::-webkit-scrollbar-thumb {
-    background: #032AE2;
+    background: skyblue;
 }
 
 nav {
@@ -65,7 +65,7 @@ h2 {
 .header {
     z-index: 1;
     text-align: center;
-    background-color: #032AE2;
+    background-color: skyblue;
     width: 100%;
     height: 100%;
     position: relative;
@@ -109,13 +109,19 @@ h2 {
     align-content: center;
 }
 
+.codebox a {
+    text-decoration: none;
+    color: skyblue;
+}
+
 .resume {
     padding-top: 4vh;
     width: 100%;
-    height: 50%;
+    height: 100%;
     color: #4D4445;
     font-size: 1.5vh;
     background-color: aliceblue;
+    font-family: 'Raleway', sans-serif;
 }
 
 .line4 {
