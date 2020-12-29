@@ -1,23 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Alejandro's Site In Progress</title>
-    <style>
-        html, body {
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        img {
-            width: 50%;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap" rel="stylesheet">
+
+	<title> Alejandro's Portfolio </title>
 </head>
+
 <body>
-    <div style=text-align:center>
-        <img src="https://upload.wikimedia.org/wikipedia/en/1/1d/Page_Under_Construction.png"
-             alt="Site In-Progress">
-    </div>
+
+<!-- NAVIGATION BAR -->
+	<nav>
+		<div class="logo">
+			<h4>Alejandro R</h4>
+		</div>
+		<ul class="nav-links">
+			<li><a href="#">About</a></li>
+			<li><a href="#">Resume</a></li>
+			<li><a href="#">Projects</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+		<div class="burger">
+			<div class="line1"> </div>
+			<div class="line2"> </div>
+			<div class="line3"> </div>
+		</div>
+	</nav>
+
+	<div class = header>
+		<h1>Meet <br> Alejandro Rodriguez</h1>
+		<div class="left-out"></div>
+		<div class="right-out"></div>
+
+	</div>
+	<!--
+	-->
+
+	<!-- Java Class Code -->
+	<div class="codeboxout">
+		<div class="codebox">
+			<p> <br> &emsp; public class Alejandro { <br> <br>
+				&emsp; &emsp; &emsp;protected location = "NJ"; <br>
+				&emsp; &emsp; &emsp;public hobbies[] = {hiking, cooking, reading, music}; <br>
+				<br>
+				&emsp; &emsp; &emsp;academics.school = "Johns Hopkins University"; <br>
+				&emsp; &emsp; &emsp;academics.graduationDate = "May 2023"; <br>
+				&emsp; &emsp; &emsp;academics.majors = {CS, CE}; <br> <br>
+
+				&emsp; &emsp; &emsp;public resume = "RESUME LINK PLACEHOLDER"; <br>
+				&emsp; &emsp; &emsp;public email = "EMAIL LINK PLACEHOLDER"; <br> <br>
+				&emsp;}
+			</p>
+		</div>
+	</div>
+
+	<div class="resume">
+		<h2>RESUME</h2>
+		<div class="resumeIn">
+			<h3> Education </h3>
+			<div class="line4"></div>
+				<!-- Resume : Education -->
+				<p>
+				&emsp;Johns Hopkins University<br>
+				&emsp;B.S. Computer Science + Engineering
+				</p>
+
+			 <h4> Relevant Coursework: </h4>
+			<ul>
+				<li> Databases </li>
+				<li> User Interfaces & Mobile Development </li>
+				<li> Data Structures </li>
+				<li> C/C++ Programming </li>
+				<li> Mastering Electronics</li>
+				<li> Discrete Maths </li>
+			</ul>
+			<!-- Resume : Work Experience -->
+			<h3> Work Experience </h3>
+			<div class="line4"></div>
+
+		</div>
+	</div>
+
+<!-- Project Cards -->
+	<div class=card id="box1">
+		<p>
+			box 1
+		</p>
+	</div>
+	<div class=card id="box2">
+		<p>
+			box 2
+		</p>
+	</div>
+	<div class=card id="box3">
+		<p>
+			box 3
+		</p>
+	</div>
+
+	<script src="app.js"></script>
 </body>
 </html>

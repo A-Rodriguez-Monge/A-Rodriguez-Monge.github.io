@@ -1,0 +1,243 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar{
+    width: 0.5vh;
+}
+body::-webkit-scrollbar-track{
+    background: #C3BCB9;
+}
+body::-webkit-scrollbar-thumb {
+    background: #032AE2;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 6vh;
+    max-height: 8vh;
+    background-color: #C3BCB9;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links a:hover {
+    color: #ededed;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-family: "Calibri", sans-serif;
+    margin: 0;
+    font-size: 48px;
+}
+
+.header {
+    z-index: 1;
+    text-align: center;
+    background-color: #032AE2;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.header h1{
+    color: white;
+    font-family: "Calibri", "sans-serif";
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 95px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.codeboxout {
+    width: 80%;
+    max-width: 900px;
+    height: 55%;
+
+    border-radius: 10px;
+    background-color: #C3BCB9;
+    position: relative;
+    margin: 25vh auto;
+}
+
+.codebox {
+    height: 100%;
+    width: 100%;
+    margin-top: 15px;
+    background-color: #4D4445;
+    position: absolute;
+}
+
+.codebox p{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.25vh;
+    line-height: 3.5vh;
+    color: white;
+    align-content: center;
+}
+
+.resume {
+    padding-top: 4vh;
+    width: 100%;
+    height: 50%;
+    color: #4D4445;
+    font-size: 1.5vh;
+    background-color: aliceblue;
+}
+
+.line4 {
+    width: 100%;
+    height: 1px;
+    margin-top: 10px;
+    background-color: #C3BCB9;
+}
+
+.resume h2 {
+    font-size: 2.5vh;
+    color: #4D4445;
+    text-decoration: none;
+}
+
+.resumeIn {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    margin: 5% auto 10%;
+    border: 2px solid #bbb;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.card p{
+    color: red;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 30px;
+}
+.burger div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+    .header h1{
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 34px;
+        position: absolute;
+    }
+    .card {
+        width: 250px;
+        height: 250px;
+        margin: 5% auto 20%;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 40vh;
+        width: 30%;
+        opacity: 0.95;
+        top: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #C3BCB9;
+        transition: transform 0.5s ease-in;
+        transform: translateX(100%);
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    body {
+        overflow-x: hidden;
+    }
+    .logo {
+        font-size: 22px;
+    }
+
+    .codeboxout {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .codebox p {
+        font-size: 1.5vh;
+    }
+}
+
+.nav-active {
+    transform: translateX(0);
+}
+
+.toggle .line1 {
+    transform: rotate(-90deg) translate(-8px, -15px);
+}
+.toggle .line2 {
+    transform: rotate(-90deg) translate(0px, -7px);
+}
+.toggle .line3 {
+    transform: rotate(-90deg) translate(8px, 1px);
+}
+/* add "close" to burger button */
+.toggle .close {
+    opacity: 1;
+}
