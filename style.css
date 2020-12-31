@@ -3,6 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar{
@@ -116,8 +117,8 @@ h2 {
 
 .resume {
     padding-top: 4vh;
+    padding-bottom: 4vh;
     width: 100%;
-    height: 100%;
     color: #4D4445;
     font-size: 1.5vh;
     background-color: aliceblue;
@@ -142,28 +143,49 @@ h2 {
     width: 70%;
 }
 
+#projects {
+    background-color: #eeeeee;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.table {
+    width: 60%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+}
+
 .card {
-    width: 300px;
-    height: 300px;
-    margin: 5% auto 10%;
     border: 2px solid #bbb;
-    border-radius: 5px;
+    background-color: #C3BCB9;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 6px 6px 10px rgba(0, 0, 0, 0.5);
+
     text-align: center;
-    position: relative;
+
+    height: 500px;
+    width: 400px;
+    margin: 5vh auto;
+}
+
+.card p {
+    color: #4D4445;
+    top: 5%;
+    font-size: 3vh;
 }
 
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25), 0 6px 6px rgba(0,0,0,0.25);
 }
-.card p{
-    color: red;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%);
-    font-size: 30px;
-}
+
 .burger div {
     width: 25px;
     height: 3px;
@@ -177,6 +199,12 @@ h2 {
     cursor: pointer;
 }
 
+@media screen and (max-width: 1440px) {
+    .table {
+        width: 90%;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     .header h1{
@@ -185,11 +213,7 @@ h2 {
         line-height: 34px;
         position: absolute;
     }
-    .card {
-        width: 250px;
-        height: 250px;
-        margin: 5% auto 20%;
-    }
+
 
     .nav-links {
         position: absolute;
@@ -209,6 +233,14 @@ h2 {
     .burger {
         display: block;
     }
+
+    .table {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 414px) {
@@ -222,6 +254,22 @@ h2 {
     .codeboxout {
         width: 100%;
     }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+    }
+    /*
+    .codeboxout {
+        width: 95%;
+    }
+    .codebox p {
+        font-size: 1.1vh;
+    }
+     */
 }
 
 @media screen and (min-width: 768px) {

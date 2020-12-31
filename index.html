@@ -19,9 +19,9 @@
 			<h4>Alejandro R</h4>
 		</div>
 		<ul class="nav-links">
-			<li><a href="#">About</a></li>
-			<li><a href="#">Resume</a></li>
-			<li><a href="#">Projects</a></li>
+			<li><a href="#codebox">About</a></li>
+			<li><a href="#resume">Resume</a></li>
+			<li><a href="#projects">Projects</a></li>
 			<li><a href="#">Contact</a></li>
 		</ul>
 		<div class="burger">
@@ -37,10 +37,10 @@
 		<div class="right-out"></div>
 
 	</div>
-	<!--
-	-->
+
 
 	<!-- Java Class Code -->
+	<div id="codebox"></div>
 	<div class="codeboxout">
 		<div class="codebox">
 			<p> <br> &emsp; public class Alejandro { <br> <br>
@@ -58,7 +58,8 @@
 		</div>
 	</div>
 
-	<div class="resume">
+	<div id="resume" style="min-height: 6vh;"></div>
+	<div class="resume" >
 		<h2>RESUME</h2>
 		<div class="resumeIn">
 			<h3> EDUCATION </h3>
@@ -66,7 +67,7 @@
 				<!-- Resume : Education -->
 			<p>
 				<a href="https://engineering.jhu.edu/">
-					<img src="https://brand.jhu.edu/assets/uploads/sites/5/2014/06/university.shield.small_.blue_.png" alt="JHU Logo" style="float:left;width: 5%;">
+					<img src="https://brand.jhu.edu/assets/uploads/sites/5/2014/06/university.shield.small_.blue_.png" alt="JHU Logo" style="float:left; min-width: 15px; width: 3%">
 				</a>
 
 				&emsp;Johns Hopkins University<br>
@@ -89,7 +90,7 @@
 			<br>
 			<p style="font-weight: bold">
 				<a href="https://careers.microsoft.com/students/us/en/usexploremicrosoftprogram">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Microsoft_logo_-_2012_%28vertical%29.svg/1910px-Microsoft_logo_-_2012_%28vertical%29.svg.png" alt="Microsoft Logo" style="float:left;width: 3.5%;">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Microsoft_logo_-_2012_%28vertical%29.svg/1910px-Microsoft_logo_-_2012_%28vertical%29.svg.png" alt="Microsoft Logo" style="float:left; min-width: 15px; width: 3%;">
 				</a>
 				&emsp; Microsoft
 			</p>
@@ -101,12 +102,12 @@
 
 			<p style="font-weight: bold">
 				<a href="https://www.metroymcas.org/locations/west-essex-ymca/west-essex-ymca/#">
-					<img src="https://www.metroymcas.org/graphics/images/orange_green/flat/y-logo.png" alt="YMCA Logo" style="float:left;width: 5%;">
+					<img src="https://www.metroymcas.org/graphics/images/orange_green/flat/y-logo.png" alt="YMCA Logo" style="float:left; min-width: 15px; width: 4%;">
 				</a>
 				&emsp;YMCA
 			</p>
 
-			<ul>
+			<ul style="list-style-type: none">
 				<li>Swim Instructor + Coach
 					<ul>
 						<li>Created individualized curriculums to improve technique, safety, and confidence</li>
@@ -139,20 +140,27 @@
 	</div>
 
 <!-- Project Cards -->
-	<div class=card id="box1">
-		<p>
-			box 1
-		</p>
-	</div>
-	<div class=card id="box2">
-		<p>
-			box 2
-		</p>
-	</div>
-	<div class=card id="box3">
-		<p>
-			box 3
-		</p>
+
+	<div id="projects">
+		<div class="table">
+			<div class="row">
+				<div class="card">
+					<p>Image Editor</p>
+				</div>
+				<div class="card">
+					<p>SkipBo Card Game</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="card">
+					<p>Trigram Model</p>
+					<img src="C:\Users\arodm\Downloads\SITE DESIGN\trigram.jpg">
+				</div>
+				<div class="card">
+					<p>Regex Matcher</p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<script src="app.js"></script>
