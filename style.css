@@ -171,7 +171,7 @@ h2 {
     text-align: center;
 
     height: 500px;
-    width: 400px;
+    width: 350px;
     margin: 5vh auto;
 }
 
@@ -179,6 +179,32 @@ h2 {
     color: #4D4445;
     top: 5%;
     font-size: 3vh;
+}
+
+.card img {
+    width: 225px;
+    border-radius: 100%;
+}
+
+.technique-row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.technique {
+    display: flex;
+    padding: 5px;
+
+    height: 30px;
+    width: 90px;
+/*    width: fit-content; */
+    text-align: center;
+    align-items: center;
+
+    border: 3px solid antiquewhite;
+    border-radius: 15px;
+    color: antiquewhite;
 }
 
 .card:hover {
