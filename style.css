@@ -222,6 +222,8 @@ h2 {
 .card figure {
     margin: 0;
     position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     border-radius: 15px;
 }
 
