@@ -11,10 +11,18 @@ const navSlide = () => {
     });
 }
 
+var card = document.querySelector('.card');
+
+card.addEventListener('click', function (){
+    card.classList.toggle('flip');
+});
+
+/*
 document.querySelectorAll('.card').forEach(item => {
    item.addEventListener('click', event => {
        item.classList.toggle('flip');
    });
 });
+ */
 
 navSlide();

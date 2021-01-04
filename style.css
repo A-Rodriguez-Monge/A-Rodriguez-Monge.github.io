@@ -201,7 +201,7 @@ h2 {
     text-transform: uppercase;
     padding: 5px;
 
-    font-size: 1.15vh;
+    font-size: 1.25vh;
     height: 30px;
     min-width: 70px;
     max-width: 33%;
@@ -281,6 +281,10 @@ footer a:hover {
 @media screen and (max-width: 1440px) {
     .table {
         width: 90%;
+    }
+
+    .technique {
+        font-size: 1.15vh;
     }
 }
 
