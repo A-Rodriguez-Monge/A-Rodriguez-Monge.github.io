@@ -9,6 +9,14 @@ const navSlide = () => {
         //burger animation
         burger.classList.toggle('toggle')
     });
+
+
 }
+
+document.querySelectorAll('.card').forEach(item => {
+   item.addEventListener('click', event => {
+       item.classList.toggle('flip');
+   });
+});
 
 navSlide();
