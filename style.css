@@ -163,10 +163,6 @@ h2 {
 }
 
 .card {
-    border: 5px solid #888888;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 6px 6px 10px rgba(0, 0, 0, 0.5);
-
     text-align: center;
 
     height: 500px;
@@ -180,9 +176,9 @@ h2 {
 }
 
 .card p {
+    margin: 5%;
     color: #4D4445;
-    top: 5%;
-    font-size: 3vh;
+    font-size: 225%;
 }
 
 .card img {
@@ -198,13 +194,15 @@ h2 {
 
 .technique {
     text-transform: uppercase;
-    padding: 5px;
 
-    font-size: 1.25vh;
-    height: 30px;
-    min-width: 70px;
-    max-width: 33%;
-    line-height: 30px;
+    padding: 1.5%;
+
+    font-size: 90%;
+    width: 40%;
+
+    height: 20%;
+    line-height: 20%;
+
     text-align: center;
 
     border: 3px solid #4D4445;
@@ -225,12 +223,14 @@ h2 {
     position: absolute;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+
+    border: 5px solid #888888;
     border-radius: 15px;
+    box-shadow: 5px 5px 15px #888888;
 }
 
 .card .front {
-    background-color: blue;/*#C3BCB9;
-    */
+    background-color: #C3BCB9;
 }
 
 .card .back {
@@ -257,19 +257,19 @@ h2 {
 }
 
 footer {
-    height: 8vh;
+    height: 10vh;
     background-color: skyblue;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    font-size: 2vh;
+    font-size: 2.5vh;
 }
 
 footer a {
     color: white;
-    font-size: 1.5vh;
+    font-size: 2vh;
     text-decoration: none;
     margin: 0 5px;
 }
@@ -281,10 +281,6 @@ footer a:hover {
 @media screen and (max-width: 1440px) {
     .table {
         width: 90%;
-    }
-
-    .technique {
-        font-size: 1.15vh;
     }
 }
 
@@ -324,10 +320,6 @@ footer a:hover {
     .row {
         flex-direction: column;
     }
-
-    .technique {
-        font-size: 1.5vh;
-    }
 }
 
 @media screen and (max-width: 414px) {
@@ -348,6 +340,8 @@ footer a:hover {
 
     .card {
         width: 90%;
+        height: 425px;
+        padding-bottom: 25px;
     }
 }
 
