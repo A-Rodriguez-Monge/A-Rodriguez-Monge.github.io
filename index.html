@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="style.css">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
 
 	<title> Alejandro's Portfolio </title>
 </head>
@@ -16,13 +16,13 @@
 <!-- NAVIGATION BAR -->
 	<nav>
 		<div class="logo">
-			<h4>Alejandro R</h4>
+			<h4>Alejandro R</h4> <!-- ADD EASTER EGG HERE -->
 		</div>
 		<ul class="nav-links">
 			<li><a href="#codebox">About</a></li>
 			<li><a href="#resume">Resume</a></li>
 			<li><a href="#projects">Projects</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="#footer">Contact</a></li>
 		</ul>
 		<div class="burger">
 			<div class="line1"> </div>
@@ -41,16 +41,16 @@
 	<div class="codeboxout">
 		<!-- Add syntax highlighting -->
 		<div class="codebox">
-			<p> <span style="color:orange;"><br> &emsp;public class </span> Alejandro { <br> <br>
-				&emsp; &emsp; &emsp;protected location = "NJ"; <br>
-				&emsp; &emsp; &emsp;public hobbies[] = {hiking, cooking, reading, music}; <br>
+			<p> <span class="orange"><br> &emsp;public class </span> Alejandro { <br> <br>
+				&emsp; &emsp; &emsp;<span class="orange">protected </span> location = <span class="green"> "NJ" </span>; <br>
+				&emsp; &emsp; &emsp;<span class="orange">public </span> hobbies[] = {hiking, cooking, reading, music}; <br>
 				<br>
-				&emsp; &emsp; &emsp;academics.school = "Johns Hopkins University"; <br>
-				&emsp; &emsp; &emsp;academics.graduationDate = "May 2023"; <br>
+				&emsp; &emsp; &emsp;academics.school = <span class="green"> "Johns Hopkins University"</span>; <br>
+				&emsp; &emsp; &emsp;academics.graduationDate = <span class="green">"May 2023"</span>; <br>
 				&emsp; &emsp; &emsp;academics.majors = {CS, CE}; <br> <br>
 
-				&emsp; &emsp; &emsp;public resume = <a href="AlejandroRodriguez.pdf"> AlejandroRodriguez.pdf</a>; <br>
-				&emsp; &emsp; &emsp;public email = <a href="mailto:a12monge50@gmail.com"> a12monge50@gmail.com</a>; <br> <br>
+				&emsp; &emsp; &emsp;<span class="orange"> public </span>resume = <a href="AlejandroRodriguez.pdf"> AlejandroRodriguez.pdf</a>; <br>
+				&emsp; &emsp; &emsp;<span class="orange"> public </span>email = <a href="mailto:a12monge50@gmail.com"> a12monge50@gmail.com</a>; <br> <br>
 				&emsp;}
 			</p>
 		</div>
@@ -88,7 +88,7 @@
 					<dl style="font-weight: bold"> Programming Languages: </dl>
 					<dl>
 						<ul>
-							<li> Java, C, C++, Python, HTML*, CSS*, JavaScript* </li>
+							<li> Java, C, C++, HTML*, CSS*, JavaScript* </li>
 						</ul>
 					</dl>
 					<dl style="font-weight: bold"> Languages: </dl>
@@ -162,7 +162,9 @@
 			<div class="row">
 				<div class="card">
 					<figure class="front">
-						<p>Image Editor</p>
+						<p> Image Editor </p>
+						<h3>C++</h3>
+
 						<img src="image%20editor%20pic.JPG" alt="Binarized Image of Kitten">
 
 						<!--TECHNIQUE BOXES-->
@@ -178,13 +180,35 @@
 					</figure>
 
 					<figure class="back">
-						<p>Image Editor</p>
+						<div class="card-blurb">
+							<p>Image Editor</p>
+							An image processing program, in the vein of Photoshop.
+							With a command-line based UI, a user can perform the following processes:
+							<div class="technique-row" style="margin-left: 20px">
+								<ul>
+									<li>Seam Carve</li>
+									<li>Gradient</li>
+									<li>Transpose</li>
+								</ul>
+								<ul>
+									<li>Crop</li>
+									<li>Grayscale</li>
+									<li>Binarize</li>
+								</ul>
+							</div>
+
+							This program is able to read an image, perform a selected
+							processing task, and write a resulting image as a new image file.
+
+						</div>
 					</figure>
 				</div>
 
 				<div class="card">
 					<figure class="front">
 						<p>SkipBo Game</p>
+						<h3>C++</h3>
+
 						<img src="skipbo.jpg" alt="Example of trigram model">
 
 						<!--TECHNIQUE BOXES-->
@@ -198,7 +222,18 @@
 						</div>
 					</figure>
 					<figure class="back">
-						<p>SkipBo Card Game</p>
+						<div class="card-blurb">
+							<p>SkipBo Game</p>
+							Programmed SkipBo card game for 2-6 players where the winner
+							is the first to empty their stock pile by adding to community
+							build piles in ascending order (1-12)
+
+							<h4 style="text-decoration: underline">Contribution:</h4>
+							As part of a team of 3, I handled command-line verification,
+							implemented game load and save functions, and created object
+							constructors.
+
+						</div>
 
 					</figure>
 
@@ -208,6 +243,7 @@
 				<div class="card">
 					<figure class="front">
 						<p>Regex Matcher</p>
+						<h3>C</h3>
 						<img src="regex.Default" alt="Example of trigram model">
 
 						<!--TECHNIQUE BOXES-->
@@ -229,6 +265,8 @@
 				<div class="card">
 					<figure class="front">
 						<p>Trigram Model</p>
+						<h3>C++</h3>
+
 						<img src="trigram.JPG" alt="Example of trigram model">
 
 						<!--TECHNIQUE BOXES-->
@@ -245,10 +283,36 @@
 					</figure>
 				</div>
 			</div>
+
+			<div class="row">
+				<div class="card">
+					<figure class="front">
+						<p>Bug  Maze Game</p>
+						<h3>Java</h3>
+
+						<img src="regex.Default" alt="Example of trigram model">
+
+						<!--TECHNIQUE BOXES-->
+						<div class="technique-row">
+							<div class="technique"> <span> Recursion </span> </div>
+							<div class="technique"> <span> File I/O </span> </div>
+						</div>
+
+						<div class="technique-row">
+							<div class="technique"> <span> Dynamic Allocation </span> </div>
+							<div class="technique"> <span> Pointer Arithmetic </span> </div>
+						</div>
+					</figure>
+					<figure class="back">
+						<p>Bug  Maze Game</p>
+
+					</figure>
+				</div>
+			</div>
 		</div>
 	</div>
 
-	<footer>
+	<footer id="footer">
 		Thanks for visiting my site :)
 		<span style="margin-top: 10px">
 			<a href="mailto:a12monge50@gmail.com"> Email </a>

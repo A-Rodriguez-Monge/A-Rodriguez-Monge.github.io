@@ -115,6 +115,14 @@ h2 {
     color: skyblue;
 }
 
+.orange {
+    color: orange;
+}
+
+.green {
+    color: #4ea24e;
+}
+
 .resume {
     padding-top: 5vh;
     padding-bottom: 5vh;
@@ -122,7 +130,7 @@ h2 {
     color: #4D4445;
     font-size: 1.5vh;
     background-color: aliceblue;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .line4 {
@@ -136,6 +144,16 @@ h2 {
     font-size: 2.5vh;
     color: #4D4445;
     text-decoration: none;
+}
+
+.resume p {
+    font-family: 'Open Sans', sans-serif;
+}
+.resume ul {
+    font-family: 'Open Sans', sans-serif;
+}
+.resume dt {
+    font-family: 'Open Sans', sans-serif;
 }
 
 .resumeIn {
@@ -164,9 +182,12 @@ h2 {
 
 .card {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+
 
     height: 500px;
     width: 375px;
+    max-width: 90%;
     margin: 5vh auto;
 
     cursor: pointer;
@@ -176,13 +197,17 @@ h2 {
 }
 
 .card p {
+    text-decoration: underline;
     margin: 5%;
     color: #4D4445;
-    font-size: 225%;
+    font-size: 245%;
+}
+.card h3 {
+    margin-top: -10px;
 }
 
 .card img {
-    width: 225px;
+    width: 220px;
     border-radius: 100%;
 }
 
@@ -220,6 +245,7 @@ h2 {
     margin: 0;
     width: 100%;
     height: 100%;
+
     position: absolute;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -227,6 +253,7 @@ h2 {
     border: 5px solid #888888;
     border-radius: 15px;
     box-shadow: 5px 5px 15px #888888;
+    transition: 0.15s ease-in-out;
 }
 
 .card .front {
@@ -234,12 +261,42 @@ h2 {
 }
 
 .card .back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     background-color: #C3BCB9;
     transform: rotateY(180deg);
 }
 
+.card-blurb {
+    width: 80%;
+    line-height: 130%;
+    font-size: 120%;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.card-blurb p {
+    font-size: 200%;
+    line-height: 120%;
+    text-decoration: underline;
+}
+
+.card-blurb ul {
+    width: fit-content;
+    padding: 5px;
+    margin-top: 0;
+    text-align: left;
+}
+
 .card.flip {
     transform: rotateY(180deg);
+}
+
+figure:hover {
+    transform: scale(1.05);
 }
 
 .burger div {
@@ -277,6 +334,11 @@ footer a:hover {
     font-size: 2vh;
 }
 
+@media screen and (min-width: 1440px){
+    .resumeIn {
+        width: 50%;
+    }
+}
 
 @media screen and (max-width: 1440px) {
     .table {
@@ -284,7 +346,7 @@ footer a:hover {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 812px) {
 
     .header h1{
         font-size: 32px;
