@@ -37,9 +37,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 nav {
+    top: -6vh;
     width: 100%;
-    min-height: 5vh;
-    max-height: 6vh;
+    height: 6vh;
     position: fixed;
     z-index: 1;
 
