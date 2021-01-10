@@ -10,16 +10,16 @@ body::-webkit-scrollbar{
     width: 0.5vh;
 }
 body::-webkit-scrollbar-track{
-    background: #C3BCB9;
+    background: #dbd7d5;
 }
 body::-webkit-scrollbar-thumb {
-    background: skyblue;
+    background: #669daa;
 }
 
 .header {
-    z-index: 1;
+    /*z-index: 1; */
     text-align: center;
-    background-color: skyblue;
+    background-color: #669daa;
     width: 100%;
     height: 100%;
     position: relative;
@@ -27,9 +27,9 @@ body::-webkit-scrollbar-thumb {
 .header h1{
     color: white;
     font-family: 'Raleway', sans-serif;
-    font-size: 100px;
+    font-size: 550%;
     font-weight: 800;
-    line-height: 95px;
+    line-height: 105%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -37,15 +37,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 nav {
+    width: 100%;
+    min-height: 5vh;
+    max-height: 6vh;
+    position: fixed;
+    z-index: 1;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 5vh;
-    max-height: 6vh;
-    background-color: #C3BCB9;
-    z-index: 1;
-    position: fixed;
-    width: 100%;
+
+    transition: top 0.5s;
+    background-color: #dbd7d5;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -62,6 +65,7 @@ nav {
 .nav-links a {
     color: white;
     text-decoration: none;
+
     font-size: 20px;
 }
 
@@ -89,7 +93,7 @@ h2 {
     height: 55%;
 
     border-radius: 10px;
-    background-color: #C3BCB9;
+    background-color: #dbd7d5;
     position: relative;
     margin: 25vh auto;
 }
@@ -98,7 +102,7 @@ h2 {
     height: 100%;
     width: 100%;
     margin-top: 15px;
-    background-color: #4D4445;
+    background-color: #695d5a;
     position: absolute;
 }
 
@@ -116,7 +120,7 @@ h2 {
 }
 
 .orange {
-    color: orange;
+    color: #ffa500;
 }
 
 .green {
@@ -127,9 +131,9 @@ h2 {
     padding-top: 5vh;
     padding-bottom: 5vh;
     width: 100%;
-    color: #4D4445;
+    color: white;
     font-size: 1.5vh;
-    background-color: aliceblue;
+    background-color: #669daa;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -137,12 +141,12 @@ h2 {
     width: 100%;
     height: 1px;
     margin-top: 10px;
-    background-color: #C3BCB9;
+    background-color: #dbd7d5;
 }
 
 .resume h2 {
     font-size: 2.5vh;
-    color: #4D4445;
+    color: white;
     text-decoration: none;
 }
 
@@ -170,7 +174,7 @@ h2 {
 
 .table {
     width: 60%;
-    margin-top: 5%;
+    margin: 10% 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -199,7 +203,7 @@ h2 {
 .card p {
     text-decoration: underline;
     margin: 5%;
-    color: #4D4445;
+    color: #695d5a;
     font-size: 240%;
 }
 
@@ -232,9 +236,9 @@ h2 {
 
     text-align: center;
 
-    border: 3px solid #4D4445;
+    border: 3px solid #695d5a;
     border-radius: 15px;
-    color: #4D4445;
+    color: #695d5a;
 }
 
 .technique span {
@@ -253,14 +257,13 @@ h2 {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 
-    border: 5px solid #888888;
-    border-radius: 15px;
-    box-shadow: 5px 5px 15px #888888;
+    border: 5px solid #695d5a;
+    box-shadow: 5px 5px 15px #695d5a;
     transition: 0.15s ease-in-out;
 }
 
 .card .front {
-    background-color: #C3BCB9;
+    background-color: #dbd7d5;
 }
 
 .card .back {
@@ -269,7 +272,7 @@ h2 {
     align-items: center;
     justify-content: center;
 
-    background-color: #C3BCB9;
+    background-color: #dbd7d5;
     transform: rotateY(180deg);
 }
 
@@ -317,7 +320,7 @@ figure:hover {
 
 footer {
     height: 10vh;
-    background-color: skyblue;
+    background-color: #669daa;
     color: white;
     display: flex;
     flex-direction: column;
@@ -368,7 +371,7 @@ footer a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #C3BCB9;
+        background-color: #dbd7d5;
         transition: transform 0.5s ease-in;
         transform: translateX(100%);
     }

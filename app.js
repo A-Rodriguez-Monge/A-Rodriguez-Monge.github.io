@@ -11,6 +11,16 @@ const navSlide = () => {
     });
 }
 
+window.onscroll = function () {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > window.innerHeight || document.documentElement.scrollTop > window.innerHeight) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        document.getElementById("navbar").style.top = "-6vh";
+    }
+}
+
 document.querySelectorAll('.card').forEach(item => {
    item.addEventListener('click', event => {
        item.classList.toggle('flip');
