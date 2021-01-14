@@ -82,11 +82,9 @@ button {
 }
 
 #addButton {
-
-    content: "&#65291";
-
     transform: translateX(-3vh);
     font-weight: 700;
+
 
     width: 4vh;
     box-shadow: 2px 2px #666;
@@ -261,7 +259,8 @@ input[type="checkbox"]:checked:after {
 
     #box {
         width: 80%;
-        height: 5vh;
+        height: 30px;
+
         font-size: 105%;
     }
 
@@ -271,5 +270,9 @@ input[type="checkbox"]:checked:after {
 
     .tasks {
         width: 85%;
+    }
+
+    footer {
+        height: 30px;
     }
 }
