@@ -264,6 +264,15 @@ input[type="checkbox"]:checked:after {
         font-size: 105%;
     }
 
+    #addButton {
+        height: 30px;
+        width: 30px;
+    }
+
+    #clearButton {
+        height: 30px;
+    }
+
     #noTask {
         font-size:100%;
     }
