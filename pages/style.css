@@ -12,7 +12,7 @@ body, html {
 
 body {
     background-image: url("images/mountains-purple.png");
-    min-height: 150px;
+    min-height: 300px;
     height: 35vh;
     background-repeat: no-repeat;
 }
@@ -35,7 +35,7 @@ body {
 
 h1 {
     margin-top: 10%;
-    margin-bottom: 3%;
+    margin-bottom: 30px;
     font-weight: 700;
 
     color: #f6f6f6;
@@ -88,7 +88,6 @@ button {
 
 
     width: 4vh;
-    box-shadow: 2px 2px #666;
 }
 
 #addButton:hover {
