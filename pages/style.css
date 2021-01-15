@@ -12,6 +12,7 @@ body, html {
 
 body {
     background-image: url("images/mountains-purple.png");
+    min-height: 150px;
     height: 35vh;
     background-repeat: no-repeat;
 }
@@ -259,7 +260,7 @@ input[type="checkbox"]:checked:after {
 
     #box {
         width: 80%;
-        height: 30px;
+        height: 35px;
 
         font-size: 105%;
     }
@@ -267,6 +268,8 @@ input[type="checkbox"]:checked:after {
     #addButton {
         height: 30px;
         width: 30px;
+
+        transform: translateX(-80%);
     }
 
     #clearButton {
