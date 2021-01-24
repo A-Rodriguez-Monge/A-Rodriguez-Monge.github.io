@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alejandro Rodriguez">
+    <meta name="keywords" content="Alejandro Rodriguez">
+
+    <title>Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="banner">My Dashboard</div>
+        <a id="accuweatherLink" href="https://www.accuweather.com/">
+            <div class="items weather" onclick="">
+                <div class="location">
+                    <h2 class="location-timezone">TimeZone</h2>
+                    <img id="weatherIcon" src="" alt="weather icon">
+                </div>
+                <div class="temp">
+                    <h1 class="temp-degrees">0</h1>
+                    <div class="temp-units">
+                        <p>&#176</p>
+                        <p id="units"></p>
+                    </div>
+                </div>
+                <div class="temp-description">Cloudy</div>
+                <img id="poweredBy" src="images/weather/poweredBy.png" alt="Powered by Accuweather">
+            </div>
+        </a>
+        <div class="items clock">
+            <h1 id="time"> 12:00:00 </h1>
+            <h2 id="period"> AM </h2>
+            <h3 id="date"> Mon <br> January 1 </h3>
+        </div>
+        <div class="items gmail">
+            <iframe src="https://mail.google.com/" ></iframe>
+        </div>
+        <div class="items extra"> </div>
+        <div class="items stocks">
+
+            <!-- TradingView Widget BEGIN -->
+            <div id="stock-widget" class="tradingview-widget-container">
+                <div id="tradingview_ac444"></div>
+                <a href="https://www.tradingview.com/symbols/NASDAQ-TNDM/" rel="noopener" target="_blank"> Charts by TradingView</a>
+                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                <script type="text/javascript">
+                    new TradingView.widget(
+                        {
+                            "width": document.getElementById("stock-widget").offsetWidth,
+                            "height": document.getElementById("stock-widget").offsetHeight,
+                            "symbol": "NASDAQ:TNDM",
+                            "timezone": "Pacific/Auckland",
+                            "theme": "dark",
+                            "style": "1",
+                            "locale": "en",
+                            "toolbar_bg": "#f1f3f6",
+                            "enable_publishing": false,
+                            "range": "1D",
+                            "allow_symbol_change": true,
+                            "container_id": "tradingview_ac444"
+                        }
+                    );
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

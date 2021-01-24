@@ -304,7 +304,7 @@ h2 {
     transform: rotateY(180deg);
 }
 
-#todo-link a {
+.page-link a {
     text-decoration: none;
     color: #695d5a;
 }

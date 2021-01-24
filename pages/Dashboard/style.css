@@ -1,0 +1,140 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    box-sizing: border-box;
+
+    overflow-y: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+iframe {
+    border-radius: 5px;
+    border: none;
+
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: 1fr;
+
+    padding: 0 1% 1%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.1fr repeat(2, 1fr);
+    grid-gap: 5px;
+
+}
+
+.items {
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Roboto', sans-serif;
+    color: #303030;
+
+    min-width: 25%;
+    max-width: 60vw;
+    height: 45vh;
+    padding: 0;
+
+    border: 3px solid transparent;
+    transition: 0.1s ease-in-out;
+}
+
+.items:hover {
+    border: 3px solid grey;
+}
+
+.banner {
+    color: white;
+    margin: 1.5vh 0;
+    font-size: 3vh;
+    text-align: center;
+
+    grid-area: 1 / 1 / 2 / 5;
+}
+
+
+.weather {
+    background: #fdfd8b;
+    grid-area: 2 / 1 / 2 / 2;
+    cursor: pointer;
+    position: relative;
+}
+
+.weather h1 {
+    margin: 20% 0;
+    font-size: 5vh;
+}
+
+.weather p {
+    margin: 0;
+    padding: 0;
+    font-size: 2vh;
+}
+
+.temp {
+    display: flex;
+}
+
+.temp-units {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 10px;
+}
+
+#poweredBy {
+    width: 15vw;
+    max-width: 200px;
+    padding-bottom: 3vh;
+    position: absolute;
+    bottom: 0;
+}
+
+.clock {
+    background: antiquewhite;
+    font-size: large;
+
+    grid-area: 2 / 2 / 2 / 3;
+}
+
+.clock h1, .clock h2 {
+    margin: 5px;
+    padding: 0;
+}
+
+.gmail {
+    background: #4343e5;
+    grid-area: 2 / 3 / 2 / 5;
+}
+
+.extra {
+    background: #70e290;
+    grid-area: 3 / 1 / 3 / 3;
+}
+
+.stocks {
+    background: #e78a8a;
+    grid-area: 3 / 3 / 3 / 5;
+}
+
+#stock-widget {
+    height: 100%;
+    width: 100%;
+}
