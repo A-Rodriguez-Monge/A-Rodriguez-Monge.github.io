@@ -20,8 +20,8 @@ window.addEventListener('load', ()=> {
 
 
             const proxy = "";//https://cors-anywhere.herokuapp.com/";
-            const locationApi = `${proxy}http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=${weatherKey}&q=${lat},${long}`;
-            const weatherApi = `${proxy}http://dataservice.accuweather.com/currentconditions/v1/`;
+            const locationApi = `${proxy}https://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=${weatherKey}&q=${lat},${long}`;
+            const weatherApi = `${proxy}https://dataservice.accuweather.com/currentconditions/v1/`;
 
             fetch(locationApi)
                .then(response => {
